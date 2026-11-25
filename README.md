@@ -12,10 +12,11 @@ streamlit run app.py
 ## Struktur
 
 - `app.py` — antarmuka Streamlit
-- `core/config.py` — konstanta & nilai default (Single Source of Truth)
-- `core/detector.py` — muat model & inferensi/tracking CPU
-- `core/rules.py` — evaluasi APD, filter temporal, cooldown
-- `core/processor.py` — pipeline gambar & video H.264
+- `config.py` — konstanta & nilai default (Single Source of Truth)
+- `detector.py` — muat model & inferensi/tracking CPU
+- `rules.py` — evaluasi APD, filter temporal, cooldown
+- `processor.py` — pipeline gambar & video H.264
+- `packages.txt` — paket sistem untuk Streamlit Community Cloud
 - `models/best.pt` — model deteksi (kelas `person`, `helmet`, `safety-vest` dipakai)
 
 Dataset: *Personal Protective Equipment — Combined Model* (Roboflow Universe, CC BY 4.0).

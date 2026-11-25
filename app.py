@@ -6,9 +6,9 @@ import cv2
 import pandas as pd
 import streamlit as st
 
-from core import config
-from core.detector import load_model
-from core.processor import process_image, process_video
+import config
+from detector import load_model
+from processor import process_image, process_video
 
 st.set_page_config(page_title="Deteksi K3 Konstruksi", layout="wide")
 

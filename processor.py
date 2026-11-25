@@ -4,9 +4,9 @@ import cv2
 import imageio
 import numpy as np
 
-from core import config
-from core.detector import detect_frame
-from core.rules import evaluate_ppe, update_temporal
+import config
+from detector import detect_frame
+from rules import evaluate_ppe, update_temporal
 
 
 def draw_workers(frame, workers):

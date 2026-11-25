@@ -1,6 +1,6 @@
 from pathlib import Path
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = Path(__file__).resolve().parent
 MODEL_PATH = ROOT_DIR / "models" / "best.pt"
 
 PERSON_CLASS = "person"

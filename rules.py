@@ -1,4 +1,4 @@
-from core import config
+import config
 
 
 def box_center(box):
