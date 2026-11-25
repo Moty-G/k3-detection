@@ -1,0 +1,10 @@
+streamlit
+ultralytics
+onnxruntime
+opencv-python-headless
+numpy
+pandas
+pillow
+imageio
+imageio-ffmpeg
+lap

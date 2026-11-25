@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+Personal Protective Equipment - Combined Model.yolov8/
+*.tmp
+models/*.pt
