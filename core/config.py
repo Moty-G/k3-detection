@@ -2,7 +2,6 @@ from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 MODEL_PATH = ROOT_DIR / "models" / "best.pt"
-ALARM_PATH = ROOT_DIR / "assets" / "alarm.mp3"
 
 PERSON_CLASS = "person"
 HELMET_CLASS = "helmet"
@@ -18,7 +17,6 @@ DEFAULT_IMGSZ = 640
 DEFAULT_CONFIRM_SECONDS = 2.0
 DEFAULT_COOLDOWN_SECONDS = 10.0
 DEFAULT_FRAME_STRIDE = 2
-DEFAULT_ALARM_SOUND = True
 
 HELMET_ZONE_RATIO = 0.33
 VEST_ZONE_TOP = 0.2

@@ -28,7 +28,6 @@ def read_settings():
         "frame_stride": st.sidebar.number_input("Frame stride", 1, 10, config.DEFAULT_FRAME_STRIDE),
         "imgsz": config.DEFAULT_IMGSZ,
         "required_ppe": config.REQUIRED_PPE_OPTIONS[ppe_label],
-        "alarm_sound": st.sidebar.toggle("Suara alarm", config.DEFAULT_ALARM_SOUND),
     }
 
 
@@ -61,12 +60,10 @@ def run_video(uploaded, model, settings):
     return video_bytes, summary, violations
 
 
-def show_alert(violations, alarm_sound):
+def show_alert(violations):
     if not violations:
         return
     st.error(f"PERINGATAN: {len(violations)} pelanggaran APD terkonfirmasi!")
-    if alarm_sound and config.ALARM_PATH.exists():
-        st.audio(str(config.ALARM_PATH), autoplay=True)
 
 
 def show_result(result):
@@ -136,6 +133,6 @@ if st.button("Proses", type="primary", disabled=kind is None):
 
 result = st.session_state.get("result")
 if result:
-    show_alert(result["violations"], settings["alarm_sound"])
+    show_alert(result["violations"])
     show_result(result)
     show_violations(result["violations"])

@@ -17,6 +17,5 @@ streamlit run app.py
 - `core/rules.py` — evaluasi APD, filter temporal, cooldown
 - `core/processor.py` — pipeline gambar & video H.264
 - `models/best.pt` — model deteksi (kelas `person`, `helmet`, `safety-vest` dipakai)
-- `assets/alarm.mp3` — suara peringatan (opsional, tambahkan sendiri)
 
 Dataset: *Personal Protective Equipment — Combined Model* (Roboflow Universe, CC BY 4.0).
